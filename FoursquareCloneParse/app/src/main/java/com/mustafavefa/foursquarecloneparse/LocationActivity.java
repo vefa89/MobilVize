@@ -55,6 +55,9 @@ public class LocationActivity extends AppCompatActivity {
                     }
                 }
             });
+        } else if (item.getItemId() == R.id.about) {
+            Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
